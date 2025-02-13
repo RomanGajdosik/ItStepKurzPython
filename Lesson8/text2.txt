@@ -1,0 +1,5 @@
+Ahoj svet.Ako sa mas.
+Ako sa mas .
+Zapis cez print funkciu2
+Zapis cez print funkciu
+Zapis cez print funkci
