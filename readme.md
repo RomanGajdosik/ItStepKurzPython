@@ -1,0 +1,1 @@
+'#ItSTep kurz pythonu repo ' 
