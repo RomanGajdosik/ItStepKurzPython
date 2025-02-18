@@ -17,3 +17,7 @@ Lesson 11:  • Linked List
             • Stack
             • Queue
             • Binary tree
+Lesson 12:  • Packing / Serialization data
+            • Pickle
+            • Json
+            • Pydantic
