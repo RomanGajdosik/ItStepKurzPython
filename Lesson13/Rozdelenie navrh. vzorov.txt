@@ -1,0 +1,11 @@
+• Vytváracie vzory - (Singleton, Factory Method,Builder ...) sa používajú na kontrolu tvorby 
+objektov. Tieto vzory umožňujú flexibilnejšie a efektívnejšie spravovanie a vytváranie 
+inštancií.
+
+• Štrukturálne vzory - (Adapter, Decorator,...) riešia otázky dizajnu tým, že pomáhajú 
+definovať jednoduché spôsoby na vytvorenie väzieb medzi rôznymi objektmi alebo 
+triedami, čím zjednodušujú štruktúru systému
+
+• Behaviorálne vzory - (Facade,Observer, Strategy) sa zameriavajú na efektívnu komunikáciu 
+a priradenie zodpovedností medzi objektmi. Tieto vzory umožňujú flexibilnú zmenu 
+správania objektov bez zmeny ich kódu.
