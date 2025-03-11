@@ -21,3 +21,11 @@ Lesson 12:  • Packing / Serialization data
             • Pickle
             • Json
             • Pydantic
+Lesson 13: •Design Patterns 
+            -Creational
+            -Structural
+            -Behavioral
+            • MVC
+Lesson 14:  •Abstract clases
+            • SOLID
+Lesson 15:  • Unit Testing 
