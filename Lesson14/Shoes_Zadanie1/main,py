@@ -1,0 +1,11 @@
+from shoeController import ShoesControler
+from shoeModel import ShoeModel
+from shoeView import ShoeView
+
+model = ShoeModel()
+view = ShoeView()
+shoeControler = ShoesControler(model,view)
+
+shoeControler.add_shoe(1,'Male','sport','white',19.99,'Nike',44.3)
+shoeControler.add_shoe(2,'FeMale','elegant','black',119.99,'lux',38)
+shoeControler.display_shoes()

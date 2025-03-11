@@ -4,3 +4,11 @@ patrik_json
 SnakifyTest.py
 subor1
 .vscode/launch.json
+Lesson13/MVC/__pycache__/taskControler.cpython-312.pyc
+Lesson13/MVC/__pycache__/taskModel.cpython-312.pyc
+Lesson13/MVC/__pycache__/taskView.cpython-312.pyc
+.gitignore
+Lesson14/Shoes_Zadanie1/__pycache__/shoe.cpython-312.pyc
+Lesson14/Shoes_Zadanie1/__pycache__/shoeController.cpython-312.pyc
+Lesson14/Shoes_Zadanie1/__pycache__/shoeModel.cpython-312.pyc
+Lesson14/Shoes_Zadanie1/__pycache__/shoeView.cpython-312.pyc
