@@ -3,8 +3,7 @@ class ShoeModel:
         self.shoes = []
     def add_shoe(self,shoe):
         self.shoes.append(shoe)
-    def remove_shoe(self,id):
-        self.shoes.remove(id)
+    
     def show_all_shoes(self):
         return self.shoes
     def show_shoes_size(self,size):
@@ -18,7 +17,11 @@ class ShoeModel:
         for shoe in self.shoes:
             total_price += float(shoe.price)
         return total_price
-
+    def remove_shoes(self,id):
+        for shoe in self.shoes:
+            if shoe.id == int(id):
+                self.shoes.remove(shoe) 
+                print(f'\nShoe with id {id} removed')       
     def find_shoe(self,shoe):
         isThere = False
         for shoe_toFind in self.shoes:

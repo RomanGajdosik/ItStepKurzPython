@@ -13,6 +13,8 @@ class ShoesControler():
             self.view.problem('Price of cannot be 0',shoe)
         else:
             self.model.add_shoe(shoe)
+    def remove_shoe(self,id):
+        self.model.remove_shoes(id)
     def display_shoes(self):
         shoes = self.model.show_all_shoes()
         self.view.display_shoes(shoes)
