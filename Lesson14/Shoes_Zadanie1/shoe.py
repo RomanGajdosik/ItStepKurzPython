@@ -4,7 +4,7 @@ class Shoe():
         self.gender_type = gender_type
         self.type = Type
         self.color =color
-        self.price = price
+        self.price = float(price)
         self.brand = brand
         self.size = size
     def __str__(self):
