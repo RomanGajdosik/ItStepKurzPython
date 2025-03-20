@@ -22,5 +22,5 @@ class checker():
             elif rod_cislo[2:4] >= "13" or rod_cislo[2:4] == "00" or rod_cislo[4:6] >= "32" or rod_cislo[4:6] == "00":
                 return False
             elif str(int(rod_cislo)/11)[-1] != "0":
-                print(str(int(rod_cislo)/11))
+                return False
         return True
