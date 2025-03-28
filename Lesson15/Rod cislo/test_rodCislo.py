@@ -16,6 +16,9 @@ from checker import checker
     ("5763716202", False),
     ("25011179161", False),
     ("6563022921a", False),
+    ("6502286164", True),
+    ("6402296164", True),
+    ("6402306164", False),
 ])
 def test_checker(rod_cislo, expected):
     
