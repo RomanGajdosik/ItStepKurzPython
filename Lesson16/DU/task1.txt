@@ -1,4 +1,6 @@
 "Task 1
 
 The user types in values in a list. After that, two threads start. 
-The first thread finds the largest value in the list. The second thread finds the smallest value in the list. The results are displayed on the screen."
+The first thread finds the largest value in the list. 
+The second thread finds the smallest value in the list. 
+The results are displayed on the screen."
