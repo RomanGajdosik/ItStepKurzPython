@@ -1,0 +1,51 @@
+1.  SELECT Title FROM albums;
+
+2.  SELECT Name FROM tracks WHERE Milliseconds > 300000;
+
+3.  SELECT tracks.Name AS TrackName, albums.Title AS AlbumTitle 
+    FROM tracks 
+    INNER JOIN albums ON tracks.AlbumId = albums.AlbumId;
+
+4.  SELECT FirstName, LastName, Country 
+    FROM customers 
+    ORDER BY Country, FirstName;
+
+5.  SELECT Artist.Name, COUNT(Track.TrackId) AS TotalTracks
+    FROM Artist
+    INNER JOIN Album ON Artist.ArtistId = Album.ArtistId
+    INENR JOIN Track ON Album.AlbumId = Track.AlbumId
+    GROUP BY Artist.Name;
+
+6.  SELECT artists.Name, COUNT(albums.AlbumId) AS AlbumCount
+    FROM artists
+    INNER JOIN albums ON artists.ArtistId = albums.ArtistId
+    GROUP BY artists.Name
+    HAVING COUNT(albums.AlbumId) > 5;
+
+7.  SELECT invoices.InvoiceId, customers.FirstName, customers.LastName, invoices.Total
+    FROM invoices
+    INNER JOIN customers ON invoices.CustomerId = customers.CustomerId;
+
+8.  SELECT DISTINCT City FROM customers;
+
+9.  SELECT genres.Name AS GenreName, AVG(tracks.UnitPrice) AS AveragePrice
+    FROM tracks
+    INNER JOIN genres ON tracks.GenreId = genres.GenreId
+    GROUP BY genres.Name;
+
+10. SELECT customers.Country, SUM(invoices.Total) AS TotalSales
+    FROM invoices
+    INNER JOIN customers ON invoices.CustomerId = customers.CustomerId
+    GROUP BY customers.Country;
+ 
+11.SELECT tracks.Name, COUNT(invoice_items.Quantity) AS TotalSales
+    FROM tracks
+    INNER JOIN invoice_items ON tracks.TrackId = invoice_items.TrackId
+    GROUP BY tracks.Name
+    ORDER BY TotalSales DESC
+    LIMIT 10;
+
+12. SELECT customers.FirstName,customers.LastName
+    FROM customers
+    INNER JOIN invoices ON customers.CustomerId = invoices.CustomerId
+    WHERE invoices.Total = (SELECT MAX(Total) FROM Invoices);
