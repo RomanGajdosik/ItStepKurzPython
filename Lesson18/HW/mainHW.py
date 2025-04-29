@@ -17,13 +17,9 @@ try:
     autor = Autor(autorn1[0][0], autorn1[0][1], autorn1[0][2])
     
     print(autorn1)
-    print(autor)
-    
-    # cursor.execute("SELECT * FROM authors")
-    # autor = cursor.fetchone()
-    # print(autor)
+    print(autor)   
     
     cursor.close()
     conn.close()
 finally:
-    print('Connected to the database')
+    print('Disconnected from the database')

@@ -4,4 +4,4 @@ class Autor():
         self.meno = meno
         self.bio = bio
     def __str__ (self):
-        return f"ID: {self.id} \n Autor: {self.meno} \n Bio: {self.bio}"
+        return f"\n Id Autora: {self.id} \n Autor: {self.meno} \n Bio: {self.bio}"
