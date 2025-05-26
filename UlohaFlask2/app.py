@@ -23,10 +23,12 @@ def show_all_files():
     return jsonify(files), 200
 @app.route('/files/<fileName>',methods=['GET'])
 def download_file(fileName):
+    if not fileName:
+        return jsonify({'ErrorMsg':'FileName is required'}), 404
     fileName = secure_filename(fileName)
     filePath = os.path.join(upFolder,fileName)
     if not os.path.exists(filePath):
-        return jsonify({'ErrorMsg':'FilePath not found'})
+        return jsonify({'ErrorMsg':'FilePath not found'}), 404
     return send_from_directory(upFolder,fileName,as_attachment=True)
 
 if __name__ == '__main__':
