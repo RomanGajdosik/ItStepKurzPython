@@ -6,6 +6,11 @@ app = Flask(__name__)
 
 upFolder = 'cloud_storage'
 
+@app.route('/')
+def index():
+    return send_from_directory(upFolder, 'index2.html')
+    
+
 @app.route('/upload',methods =["POST"])
 def upload_file():
     if 'file' not in request.files:
