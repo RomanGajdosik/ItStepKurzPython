@@ -1,0 +1,127 @@
+/* Reset a základné štýly */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding-top: 100px; /* pre sticky header */
+}
+
+/* HEADER */
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav a:hover {
+  color: #ffd700;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: white;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* SKILLS SECTION */
+.skills-section {
+  padding: 40px 20px;
+  background-color: #e9ecef;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+  justify-items: center;
+}
+
+.skill {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.contact-buttons {
+  display: inline-block; /* Inline-block layout */
+  margin-top: 20px;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #0056b3;
+}
+
+/* FOOTER */
+.footer {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  margin-top: 40px;
+}
