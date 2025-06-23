@@ -1,0 +1,10 @@
+body{
+    background-color: bisque;
+}
+.input h1{
+    font-weight: bold;
+    color: blueviolet;
+}
+#textList{
+    list-style-type:none;
+}
