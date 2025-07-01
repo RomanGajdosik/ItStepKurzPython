@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chytrý Hrnček</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+<style>
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+  filter: brightness(0) saturate(100%) invert(26%) sepia(93%) saturate(2049%) hue-rotate(210deg) brightness(87%) contrast(108%);
+}
+</style>
+
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-5">
+    <h1 class="display-5 fw-bold">Chytrý Hrnček</h1>
+    <p class="lead">Udrží tvoju kávu horúcu celý deň</p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="pic.jpg" class="d-block w-100" alt="Chytrý Hrnček 1">
+            </div>
+            <div class="carousel-item">
+              <img src="pic2.jpg" class="d-block w-100" alt="Chytrý Hrnček 2">
+            </div>
+          <div class="carousel-item">
+              <img src="pic3.jpg" class="d-block w-100" alt="Chytrý Hrnček 3">
+            </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>       
+  </div>
+      <div class="col-md-6">
+        <h3>Prečo si ho zamilujete?</h3>
+        <ul>
+          <li>Automatická regulácia teploty</li>
+          <li>Bluetooth ovládanie cez mobil</li>
+          <li>Elegantný minimalistický dizajn</li>
+        </ul>
+        <p>
+          Hrnček je ideálny do kancelárie, domova alebo na cesty. Batéria vydrží až 12 hodín a je ľahko nabíjateľná cez USB-C.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ceny -->
+  <div class="container mb-5">
+    <h2 class="text-center mb-4">Cenník</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Základný</h5>
+            <p class="card-text">Bez Bluetooth, čierna farba</p>
+            <h4 class="mb-3">29,99 €</h4>
+            <a href="#" class="btn btn-primary">Kúpiť teraz</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-4 mt-md-0">
+        <div class="card text-center border-primary">
+          <div class="card-body">
+            <h5 class="card-title">Prémiový</h5>
+            <p class="card-text">S Bluetooth, 3 farby, darčekové balenie</p>
+            <h4 class="mb-3">49,99 €</h4>
+            <a href="#" class="btn btn-primary">Kúpiť teraz</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="mt-5 mb-4 text-center fw-bold">Často kladené otázky (FAQ)</h2>
+<div class="accordion" id="faqAccordion" style="max-width: 800px; margin: 0 auto;">
+  <div class="accordion-item border-0 rounded shadow-sm mb-3">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button bg-white fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+        🕒 Ako dlho vydrží batéria?
+      </button>
+    </h2>
+    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+      <div class="accordion-body">
+        Batéria vydrží až <strong>12 hodín</strong> aktívneho používania.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item border-0 rounded shadow-sm mb-3">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed bg-white fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+        📶 Funguje aj bez Bluetooth?
+      </button>
+    </h2>
+    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+      <div class="accordion-body">
+        Áno, základná verzia funguje <strong>bez Bluetooth</strong> a udržiava teplotu automaticky.
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Tlačidlo na zobrazenie formulára -->
+  <div class="d-flex justify-content-center my-3 ">
+    <button class="btn btn-dark rounded-pill px-4 mb-3 justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#contactFormCollapse">
+      Kontakt
+    </button>
+  </div>
+  <!-- Rozbalovací formulár -->
+  <div class="collapse" id="contactFormCollapse">
+   <div class="d-flex justify-content-center">
+ 
+    <form class="p-4 rounded shadow-sm" style="max-width: 600px; background-color: #f8f9fa;">
+      <div class="mb-3">
+        <label for="name" class="form-label">Meno</label>
+        <input type="text" class="form-control rounded-pill border-dark" id="name" placeholder="Tvoje meno">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Emailová adresa</label>
+        <input type="email" class="form-control rounded-pill border-dark" id="email" placeholder="napr. meno@priklad.sk">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Správa</label>
+        <textarea class="form-control border-dark rounded" id="message" rows="4" placeholder="Napíš nám..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark px-4 rounded-pill">Odoslať</button>
+    </form>
+   </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3">
+    <small>&copy; 2025 Chytrý Hrnček. Všetky práva vyhradené.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+</body>
+</html>
